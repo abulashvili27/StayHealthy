@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
     public void onWelcomeClick(View view){
         Intent changeActivity = new Intent(this, registrationActivity.class);
         startActivity(changeActivity);
-        overridePendingTransition(R.anim.slide_down, R.anim.slide_up);
 
     }
 
