@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".registrationActivity">
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="467dp"
+        android:layout_height="292dp"
+        android:layout_marginBottom="326dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/registerphoto" />
+
+    <ImageView
+        android:id="@+id/userIconRegister"
+        android:layout_width="77dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="307dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375"
+        app:srcCompat="@drawable/usericon" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:background="@drawable/edit_txt_shape"
+        android:drawableStart="@drawable/ic_pen"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userIconRegister"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="211dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="171dp"
+        android:background="@drawable/edit_txt_shape"
+        android:drawableStart="@drawable/ic_email_gray"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/userInformationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="225dp"
+        android:text="@string/user_information"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="146dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/edit_txt_shape"
+        android:ems="10"
+        android:hint="@string/date"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gender"
+        app:layout_constraintTop_toBottomOf="@+id/userInformationTextView" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="146dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_txt_shape"
+        android:ems="10"
+        android:hint="@string/gender"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/dateEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userInformationTextView" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="146dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/edit_txt_shape"
+        android:ems="10"
+        android:hint=" Weight"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toEndOf="@+id/height"
+        app:layout_constraintTop_toBottomOf="@+id/dateEditText"
+        app:layout_constraintVertical_bias="0.195" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="146dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/edit_txt_shape"
+        android:ems="10"
+        android:hint=" Height"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="159dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/edit_round"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

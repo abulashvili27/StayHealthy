@@ -15,6 +15,7 @@
         android:layout_marginBottom="32dp"
         android:background="@drawable/edit_round"
         android:text="Welcome"
+        android:onClick="onWelcomeClick"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
