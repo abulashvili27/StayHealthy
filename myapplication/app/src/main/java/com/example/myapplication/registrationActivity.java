@@ -10,11 +10,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.myapplication.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+
+import org.w3c.dom.Text;
 
 public class registrationActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -93,25 +96,14 @@ public class registrationActivity extends AppCompatActivity implements View.OnCl
         String weight = editTextWeight.getText().toString().trim();
         Intent intent = new Intent(this, CalculatorCaloriesActivity.class);
 
-        double calories = 0;
 
 
-        if (gender == "Male" || gender == "male") {
-
-            int weightForMan = Integer.parseInt(weight);
-            int heightForMan = Integer.parseInt(height);
-            int ageForMan = Integer.parseInt(age);
-            calories = weightForMan * 10 + 6.25 * heightForMan - 5 * ageForMan + 5;
-        }
-        if (gender == "Female" || gender == "female") {
-            int weightForWoman = Integer.parseInt(weight);
-            int heightForWoman = Integer.parseInt(height);
-            int ageForWoman = Integer.parseInt(age);
-            calories = 10 * weightForWoman + 6.25 * heightForWoman - 5 * ageForWoman - 161;
-        }
-
-        intent.putExtra("KeyForMan", calories);
-
+        intent.putExtra("NAME_EXTRA", name);
+        intent.putExtra("EMAIL_EXTRA", email);
+        intent.putExtra("GENDER_EXTRA", gender);
+        intent.putExtra("AGE_EXTRA", age);
+        intent.putExtra("HEIGHT_EXTRA", height);
+        intent.putExtra("WEIGHT_EXTRA", weight);
 
         if(!validateInputs(name, email, gender, age, height, weight)){
 
@@ -126,6 +118,7 @@ public class registrationActivity extends AppCompatActivity implements View.OnCl
 
             );
 
+
             dbProducts.add(product)
                     .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                         @Override
@@ -136,8 +129,8 @@ public class registrationActivity extends AppCompatActivity implements View.OnCl
 
                         }
                     }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
+                @Override
+                public void onFailure(@NonNull Exception e) {
 
                 }
             });
