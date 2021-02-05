@@ -4,4 +4,33 @@
     <string name="gender"> Gender</string>
     <string name="user_information">User information ...................................</string>
     <string name="email">Email</string>
+
+    <string name="TITLE">TITLE</string>
+    <string name="Description">Description</string>
+
+    <string-array name="food_names">
+        <item>apple</item>
+        <item>banana</item>
+        <item>beef</item>
+        <item>bread</item>
+        <item>burger</item>
+        <item>carrot</item>
+        <item>cucumber</item>
+        <item>orange juice</item>
+        <item>pizza</item>
+        <item>tomato</item>
+    </string-array>
+
+    <string-array name="Descritpions">
+        <item>contains 52 calories</item>
+        <item>contains 89 calories</item>
+        <item>contains 250 calories</item>
+        <item>contains 265 calories</item>
+        <item>contains 295 calories</item>
+        <item>contains 41 calories</item>
+        <item>contains 10 calories</item>
+        <item>contains 45 calories</item>
+        <item>contains 266 calories</item>
+        <item>contains 22 calories</item>
+    </string-array>
 </resources>
