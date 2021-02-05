@@ -10,11 +10,11 @@ import android.widget.TextView;
 
 public class CalculatorCaloriesActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
-
-    String foodnamess[], descriptionss[];
-    int images[] = {R.drawable.apple, R.drawable.banana, R.drawable.beef_meat, R.drawable.bread, R.drawable.burger,
-            R.drawable.carrot, R.drawable.cucumber, R.drawable.orange_juice, R.drawable.pizza, R.drawable.tomato};
+//    RecyclerView recyclerView;
+//
+//    String foodnamess[], descriptionss[];
+//    int images[] = {R.drawable.apple, R.drawable.banana, R.drawable.beef_meat, R.drawable.bread, R.drawable.burger,
+//            R.drawable.carrot, R.drawable.cucumber, R.drawable.orange_juice, R.drawable.pizza, R.drawable.tomato};
 
 
 
@@ -23,16 +23,16 @@ public class CalculatorCaloriesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator_calories);
 
-
-        recyclerView = findViewById(R.id.recyclervieww);
-
-        foodnamess = getResources().getStringArray(R.array.food_names);
-        descriptionss = getResources().getStringArray(R.array.Descritpions);
-
-
-        MYAdapter myAdapter = new MYAdapter(this, foodnamess, descriptionss, images);
-        recyclerView.setAdapter(myAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//
+//        recyclerView = findViewById(R.id.recyclervieww);
+//
+//        foodnamess = getResources().getStringArray(R.array.food_names);
+//        descriptionss = getResources().getStringArray(R.array.Descritpions);
+//
+//
+//        MYAdapter myAdapter = new MYAdapter(this, foodnamess, descriptionss, images);
+//        recyclerView.setAdapter(myAdapter);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 
         Intent intent = getIntent();
@@ -57,7 +57,7 @@ public class CalculatorCaloriesActivity extends AppCompatActivity {
             calories = 10 * weightForWoman + 6.25 * heightForWoman - 5 * ageForWoman - 161;
         }
 
-        TextView textView = (TextView) findViewById(R.id.descriptions);
+        TextView textView = (TextView) findViewById(R.id.textView);
         textView.setText("Daily norm of calories " + calories);
 
 
