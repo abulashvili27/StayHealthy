@@ -6,7 +6,7 @@
     <string name="email">Email</string>
 
     <string name="LOGIN_TAG">Go Back</string>
-=======
+    =======
 
     <string name="TITLE">TITLE</string>
     <string name="Description">Description</string>
@@ -36,5 +36,6 @@
         <item>contains 266 calories</item>
         <item>contains 22 calories</item>
     </string-array>
->>>>>>> b6de13ab985f6269e03f6a9d2158137d8b5f3cd5
+    >>>>>>> b6de13ab985f6269e03f6a9d2158137d8b5f3cd5
+  
 </resources>
