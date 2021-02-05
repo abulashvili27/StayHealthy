@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager">
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="Android API 30 Platform" project-jdk-type="Android SDK">
+>>>>>>> b6de13ab985f6269e03f6a9d2158137d8b5f3cd5
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
