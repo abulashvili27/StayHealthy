@@ -126,6 +126,7 @@ public class registrationActivity extends AppCompatActivity implements View.OnCl
 
 
                             startActivity(intent);
+                            finish();
 
                         }
                     }).addOnFailureListener(new OnFailureListener() {

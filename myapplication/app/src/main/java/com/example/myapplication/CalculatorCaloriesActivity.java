@@ -14,12 +14,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class CalculatorCaloriesActivity extends AppCompatActivity {
+
+
 
     ListView listView;
     String Title[] = {"apple", "banana", "beef", "bread", "burger", "carrot", "cucumber", "orange juice", "pizza", "tomato",};
@@ -36,6 +39,7 @@ public class CalculatorCaloriesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator_calories);
+
 
         listView = findViewById(R.id.listvieww);
 
@@ -126,7 +130,20 @@ public class CalculatorCaloriesActivity extends AppCompatActivity {
         Context context = getApplicationContext();
         Toast.makeText(context, s, Toast.LENGTH_LONG).show();
 
+        Intent intent1 = new Intent(this, StatisticActivity.class);
+        intent1.putExtra("NORM_CALORIES", calories);
+        intent1.putExtra("TAKEN_CALORIES", sum);
 
+
+        Button calculateBtn = (Button)findViewById(R.id.calculateBtn);
+        calculateBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(intent1);
+
+            }
+        });
 
     }
 

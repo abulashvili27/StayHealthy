@@ -13,6 +13,10 @@
     <string name="by_Aleksandre_tvaradze_and_Davit_abulashvili">by Aleksandre tvaradze and Davit abulashvili</string>
     <string name="GAXDI">GAXDI</string>
     <string name="LOADING...">LOADING...</string>
+    <string name="calories">Calories</string>
+    <string name="statistic">Statistic</string>
+    <string name="calculate">Calculate</string>
+    <string name="balance_calories">Best exercises for balance calories</string>
 
     <string-array name="food_names">
         <item>apple</item>

@@ -8,6 +8,16 @@
     android:orientation="vertical"
     tools:context=".CalculatorCaloriesActivity">
 
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        android:background="@drawable/edit_round"
+        android:textAlignment="center"
+        android:onClick="onCalculateBtnClick"
+        />
+
     <ListView
         android:id="@+id/listvieww"
         android:layout_width="match_parent"
