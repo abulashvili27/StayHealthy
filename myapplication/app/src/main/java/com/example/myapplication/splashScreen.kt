@@ -1,10 +1,10 @@
 package com.example.myapplication
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import androidx.core.os.HandlerCompat.postDelayed
+import android.view.Menu
+import androidx.appcompat.app.AppCompatActivity
 
 class splashScreen : AppCompatActivity() {
 
@@ -16,8 +16,14 @@ class splashScreen : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        Handler().postDelayed({startActivity(Intent(this, LoginActivity::class.java))
-        finish()
+        Handler().postDelayed({
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
         }, 4000)
     }
+
+
+
+
+
 }

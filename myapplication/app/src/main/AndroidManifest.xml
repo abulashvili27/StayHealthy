@@ -11,11 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".Test_Menu"></activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".StatisticActivity" />
+        <activity android:name=".splashScreen" />
         <activity android:name=".CalculatorCaloriesActivity" />
-        <activity android:name=".registrationActivity" />
-        <activity android:name=".splashScreen">
+        <activity android:name=".registrationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

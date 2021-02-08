@@ -10,6 +10,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -40,6 +42,8 @@ public class CalculatorCaloriesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator_calories);
 
+
+        //--------------------ListView---------------------------
 
         listView = findViewById(R.id.listvieww);
 
@@ -103,6 +107,7 @@ public class CalculatorCaloriesActivity extends AppCompatActivity {
         });
 
 
+        //-----------------------------------CALCULATIONS------------------------------------------
 
         Intent intent = getIntent();
         double calories = 0;
@@ -147,6 +152,17 @@ public class CalculatorCaloriesActivity extends AppCompatActivity {
 
     }
 
+    //------------------------------MENU-----------------------------------------------------------
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.chamo_natvali, menu);
+        return true;
+    }
+
+
+    //----------------------------------------------ListView---------------------------------------
 
     class MyADapter extends ArrayAdapter<String> {
         Context context;
